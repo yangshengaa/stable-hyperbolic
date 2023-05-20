@@ -1,0 +1,3 @@
+['tree']
+data_dir = '../../pvae/data/'
+result_dir = '../results/tree_with_grad'
