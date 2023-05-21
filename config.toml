@@ -1,3 +1,7 @@
 ['tree']
-data_dir = '../../pvae/data/'
-result_dir = '../results/tree_with_grad'
+data_dir = 'data/tree'
+result_dir = 'results/tree_with_grad'
+
+['svm']
+data_dir = 'data/svm'
+result_dir = "results/svm"

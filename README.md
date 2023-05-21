@@ -7,9 +7,22 @@ This repository holds all experiments supporting [The Numerical Stability of Hyp
 Two functionalities are available:
 
 1. shallow tree embeddings in different manifolds (Euclidean, Poincare, Lorentz, and Reparemtrized Euclidean;
-2. stable hyperbolic SVM.
+2. stable hyperbolic SVM: compare the performances among
+
+   - ESVM: Euclidean SVM
+   - LSVM: Lorentz SVM with non-convex constraints
+   - PSVM: Poincare SVM with precomputed reference points
+   - LSVMPP: Lorentz SVM with reparametrized loss functions without the non-convex constraints. (PP stands for plus plus, as inspired by [Hyperbolic Neural Network++](https://openreview.net/forum?id=Ec85b0tUwbA))
 
 ## Running instructions
+
+To run stable hyperbolic SVM, [train_svm.py](src/train_svm.py) contains all programs to train four models. An example training script is as follows: at root,
+
+```bash
+python src/train_svm.py --model LSVMPP --C 5 --epochs 5000 --data cifar --refpt raw
+```
+
+See [commands](commands) folder for more running scripts.
 
 ### Set up enviornmenet
 
