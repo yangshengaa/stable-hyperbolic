@@ -43,10 +43,16 @@ pip install --no-cache-dir statsmodels seaborn scipy pillow networkx tqdm gpusta
 create a file named [config.toml](config.toml) that contains the path for data and results. An example is shown below:
 
 ```toml
-['simulation']
-data_dir = '../data'
-result_dir = '../results'
+['tree']
+data_dir = 'data/tree/'
+result_dir = 'results/tree/'
+
+['svm']
+data_dir = 'data/svm/'
+result_dir = 'results/svm/'
 ```
+
+change ```tag``` arccordingly to redirect reading and saving paths.
 
 ## Authors
 

@@ -11,7 +11,7 @@ models="LSVMPP"
 device='cuda'
 lr_candidates="1e-7"
 decision_mode="arcsinh"
-tag='real'
+tag='svm'
 epochs=10000
 C=5
 
