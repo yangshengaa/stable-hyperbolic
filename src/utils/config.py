@@ -22,6 +22,6 @@ def load_config(tag='simulation') -> Dict[str, str]:
     assert 'result_dir' in config, 'Did not find result_dir'
 
     for _, path in config.items():
-        if not os.path.exists(path): os.mkdir(path)
+        if not os.path.exists(path): os.makedirs(path)
     
     return config

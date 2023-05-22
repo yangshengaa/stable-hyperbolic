@@ -32,11 +32,10 @@ with conda installed, we may install the folloing env to run the codes.
 conda create -n shyp
 conda activate shyp
 conda install python==3.8
-pip install pytorch torchvision torchaudio pytorch
+pip install torch torchvision torchaudio
 pip install autopep8 jupyterlab toml timebudget tensorboard rich torch-tb-profiler
 pip install --no-cache-dir geoopt==0.4.1
-pip install --no-cache-dir statsmodels seaborn scipy pillow networkx tqdm
-pip install -e .
+pip install --no-cache-dir statsmodels seaborn scipy pillow networkx tqdm gpustat scikit-learn
 ```
 
 ### Specify Paths

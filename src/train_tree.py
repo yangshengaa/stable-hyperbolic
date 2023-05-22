@@ -19,7 +19,7 @@ from geoopt.optim import RiemannianAdam, RiemannianSGD
 
 # load files 
 from utils import visualize_embeddings, convert_fig_to_array
-from obj import ae_pairwise_dist_objective, _euclidean_pairwise_dist, _poincare_pairwise_dist, _lorentz_pairwise_dist, metric_report
+from objective import ae_pairwise_dist_objective, _euclidean_pairwise_dist, _poincare_pairwise_dist, _lorentz_pairwise_dist, metric_report
 from models import architectures
 from utils import load_config
 
@@ -75,7 +75,7 @@ if args.log_train:
 if args.log_gradient:
     gradient_path = os.path.join(paths['result_dir'], test_name, 'gradient')
     if not os.path.exists(gradient_path):
-        os.mkdir(gradient_path)
+        os.makedirs(gradient_path)
 
 # =====================
 # ---- load data ------

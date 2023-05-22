@@ -1,6 +1,6 @@
 ['tree']
 data_dir = 'data/tree'
-result_dir = 'results/tree_with_grad'
+result_dir = 'results/tree'
 
 ['svm']
 data_dir = 'data/svm'
