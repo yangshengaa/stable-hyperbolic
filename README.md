@@ -1,8 +1,6 @@
 # Stable Hyperbolic
 
-This repository holds all experiments supporting [The Numerical Stability of Hyperbolic Representation Learning](https://arxiv.org/abs/2211.00181), ICML 2023.
-
-(TODO: use PMLR link)
+This repository holds all experiments supporting [The Numerical Stability of Hyperbolic Representation Learning](https://proceedings.mlr.press/v202/mishne23a.html), ICML 2023.
 
 Two functionalities are available:
 
